@@ -1,0 +1,87 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+
+  .search {
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    input,
+    button {
+      padding: 1rem 2rem;
+      width: 40%;
+      border: none;
+      font-size: 20px;
+      color: #ff4b2b;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: 0rem 4px 20px rgba(0, 0, 0, 0.151);
+
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      width: 100px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-align: center;
+      padding-right: 0;
+      padding-left: 0;
+      background-color: #610b1f;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .info {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .condition {
+      padding: 2rem 0;
+      p {
+        font-size: 20px;
+        color: rgb(167, 255, 251);
+      }
+
+      img {
+        width: 5rem;
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: lightcoral;
+}
+
+@media (max-width: 720px) {
+  .search {
+    input {
+      font-size: 17px !important;
+      width: 70% !important;
+      padding: 0.5rem 1rem !important;
+    }
+
+    button {
+      font-size: 17px !important;
+      padding: 0.5rem 0 !important;
+      width: 70px !important;
+    }
+  }
+}
